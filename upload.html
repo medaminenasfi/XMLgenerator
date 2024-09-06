@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Excel and Generate XML</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Télécharger un fichier Excel</h1>
+        <br><br><br><br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Fichier Excel :</label>
+                <br><br><br>
+                <input type="file" class="form-control" id="file" name="file" required>
+            </div>
+            <br><br><br><br>
+            <button type="submit" class="btn btn-primary">Génerer et Télécharger</button>
+        </form>
+    </div>
+</body>
+</html>
